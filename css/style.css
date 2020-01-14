@@ -19,7 +19,7 @@ main{
     width: 100vw;
     height: calc(100vh - 50px);
     background: linear-gradient(to right,  rgba(70, 69, 212, 0.9) 0%, rgba(0, 0, 255, 0.7) 51%, rgba(13, 11, 148, 1) 100%);      
-    
+    min-height: 500px;
 }
 #left{
     width: 50vw;
@@ -64,19 +64,65 @@ main{
 #cart2:hover{
     content: url('./../img/carta1.png');
 }
+main#learning{
+    min-width: 300px;
+    height: 100%;
+    position: absolute;
+}
+#information{
+    width: 100vw;
+    max-width: 400px;
+    min-width: 300px;
+    height: 100vh;
+    margin: auto;
+    text-align: justify;
+    /* background-color: blue; */
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#information p{
+    font: 20px cursive;
+    padding: 10px;
+    line-height: auto;
+}
+#information button{
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 8px;
+    font: 23px Helvetica, sans-serif;
+}
+#returns{
+    color: black;
+    background-color: white;
+}
+#returns:hover{
+    background-color: #d0d0d0;
+}
+button#play{
+    color: white;
+    background-color: #100e98;
+    right: 0px;
+    margin: 0 0 0 10px;
+}
+button#play:hover{
+    background-color: #4c4cff;
+}
 
 @media (max-width:359px){
-    #left, #right{
+ #left, #right{
         width: 100vw;
     }
-   #cart1{
-       /* position: absolute; */        
+   #cart1{       
        top: auto; 
-       /* bottom: 0px;*/
        left: 15vw; 
     }
    #cart2{
         top:auto; 
         left: 35vw;
+     }
+     main#learning{
+         height: 100vh;
      }
 }

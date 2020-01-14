@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <i href="#">Jugar</i>
-        <i href="#">Aprender</i>
+        <i id="play">Jugar</i>
+        <i id="learn">Aprender</i>
     </header>
     <main>
       <div id="left">
@@ -39,3 +39,7 @@
     </main>    
 </body>
 </html>
+<script>
+    play.addEventListener('click', function(){location.href="views/play.html"});
+    learn.addEventListener('click', function(){location.href="views/learn.html"});
+</script>
