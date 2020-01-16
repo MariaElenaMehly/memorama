@@ -39,6 +39,8 @@ window.addEventListener('load', function(){
                     all[0].classList.add('validate-true');
                     all[1].classList.remove('validate');
                     all[1].classList.add('validate-true');
+                    all[0].classList.remove('active');
+                    all[1].classList.remove('active');
                 }else{
                     all[0].classList.remove('validate');
                     all[1].classList.remove('validate');

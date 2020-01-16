@@ -123,9 +123,11 @@ button#play:hover{
     width: 20%;  
     margin: 1px;  
     float: left;
-    line-height: 70px;
+    line-height: 85px;
     text-align: center;
     border: 1px #6e676eaa solid;
+    font-size: 22px;
+    font-family: sans-serif;
 }
 .game-card-hidden{
     color: #ffffff;
@@ -134,7 +136,6 @@ button#play:hover{
     width: 24.53%; 
     margin: 1px;  
     float: left;
-    line-height: 70px;
     text-align: center;
     border: 1px #6e676eaa solid;
     background: #2741d630;
