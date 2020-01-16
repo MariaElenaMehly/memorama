@@ -130,7 +130,7 @@ button#play:hover{
     color: #ffffff;
     font-size: 0px;
     height: 85px;
-    width: 20%; 
+    width: 24.53%; 
     margin: 1px;  
     float: left;
     line-height: 70px;
@@ -156,6 +156,91 @@ button#play:hover{
     width: 100%;
     visibility: hidden;
 }
+@media (max-width:1213px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.5%;
+    }
+}
+@media (max-width:1142px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.44%;
+    }
+}
+@media (max-width:1019px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.4%;
+    }
+}
+@media (max-width:952px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.3%;
+    }
+}
+@media (max-width:817px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.2%;
+    }
+}
+@media (max-width:714px)
+{
+    .game-card, .game-card-hidden{
+        width: 24.1%;
+    }
+}
+@media (max-width:636px)
+{
+    .game-card, .game-card-hidden{
+        width: 24%;
+    }
+}
+@media (max-width:572px)
+{
+    .game-card, .game-card-hidden{
+        width: 32.3%;
+    }
+}
+@media (max-width:554px)
+{
+    .game-card, .game-card-hidden{
+        width: 32.2%;
+    }
+} 
+@media (max-width:505px)
+{
+    .game-card, .game-card-hidden{
+        width: 32.1%;
+    }
+}
+@media (max-width:464px)
+{
+    .game-card, .game-card-hidden{
+        width: 32%;
+    }
+} 
+@media (max-width:430px)
+{
+    .game-card, .game-card-hidden{
+        width: 31.9%;
+    }
+} 
+@media (max-width:400px)
+{
+    .game-card, .game-card-hidden{
+        width: 31.8%;
+    }
+}
+@media (max-width:374px)
+{
+    .game-card, .game-card-hidden{
+        width: 31.7%;
+    }
+}
+
 @media (max-width:359px){
  #left, #right{
         width: 100vw;
@@ -171,4 +256,37 @@ button#play:hover{
      main#learning{
          height: 100vh;
      }
+     .game-card, .game-card-hidden{
+        width: 31.6%;
+    }
+}
+@media (max-width:331px)
+{
+    .game-card, .game-card-hidden{
+        width: 31.4%;
+    }
+}
+@media (max-width:297px)
+{
+    .game-card, .game-card-hidden{
+        width: 31.1%;
+    }
+}
+@media (max-width:259px)
+{
+    .game-card, .game-card-hidden{
+        width: 30.8%;
+    }
+}
+@media (max-width:228px)
+{
+    .game-card, .game-card-hidden{
+        width: 30%;
+    }
+}
+@media (max-width:173px)
+{
+    .game-card, .game-card-hidden{
+        width: 99%;
+    }
 }
