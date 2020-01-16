@@ -113,8 +113,11 @@ button#play:hover{
 #game-box{
     border-radius: 2px;
     border: 1px #cacacc solid;
-    margin: 10vh 15vw 3vh 15vw;
+    margin: 3vh 15vw 3vh 15vw;
     overflow: hidden;
+}
+#game-box img{
+    width: 100%;
 }
 .game-card{
     cursor: pointer;
@@ -158,6 +161,12 @@ button#play:hover{
     border-radius: 5px;
     padding: 8px;
     font: 23px Helvetica, sans-serif;
+}
+#timer{
+    width: 100%;
+    margin: 3vh 0 0 0;
+    font: 25px sans-serif;
+    text-align: center;
 }
 
 .input-hidden

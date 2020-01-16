@@ -1,4 +1,6 @@
 "use strict";
+var waitTimer='';
+var validateTimer=false;
 window.addEventListener('load', function(){
     var game=document.getElementById('game-box');
     play.addEventListener('click', function(){
@@ -20,7 +22,16 @@ window.addEventListener('load', function(){
             }
         }while(i<12)
         console.log(memory);
-        document.getElementById('game-box').innerHTML=card;      
+        document.getElementById('game-box').innerHTML=card;    
+        play.innerHTML="Iniciar juego";
+        document.getElementById('timer').innerHTML="1:00";
+        validateTimer=false;
+        waitTimer=60;
+        setTimeout(function(){
+            validateTimer=true;
+            timer(); 
+        }, 1000)
+         
     });
     
     game.addEventListener('click', function (evt) {
@@ -57,8 +68,34 @@ window.addEventListener('load', function(){
             {
                 document.getElementById(id).classList.add('game-card-hidden');
             }
-
-
+            validateWinner();
         }
     });
 });
+
+function validateWinner()
+{
+    var validate = document.querySelectorAll('.validate-true');
+    if(validate.length==12)
+    {
+        var winner='<div class="winner"><img src="./../img/ganaste.gif" alt="Ganaste"></div>';
+        document.getElementById('game-box').innerHTML=winner;
+        play.innerHTML="Jugar"; 
+        if(validateTimer==true)
+        {
+            validateTimer=false;
+        } 
+    }
+}
+function timer()
+{
+    waitTimer=waitTimer-1;   
+    if(waitTimer>=0 && validateTimer==true)
+    {
+        document.getElementById('timer').innerHTML='0:'+waitTimer;
+        setTimeout('timer()', 1000);
+    }else{
+        validateTimer==false;
+    }
+    
+}
