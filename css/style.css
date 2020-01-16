@@ -109,7 +109,49 @@ button#play{
 button#play:hover{
     background-color: #4c4cff;
 }
-
+#game-box{
+    border-radius: 2px;
+    border: 1px #cacacc solid;
+    margin: 10vh 15vw 3vh 15vw;
+    overflow: hidden;
+}
+.game-card{
+    color: black;
+    height: 85px;
+    width: 20%;  
+    margin: 1px;  
+    float: left;
+    line-height: 70px;
+    text-align: center;
+    border: 1px #6e676eaa solid;
+}
+.game-card-hidden{
+    color: #ffffff;
+    font-size: 0px;
+    height: 85px;
+    width: 20%; 
+    margin: 1px;  
+    float: left;
+    line-height: 70px;
+    text-align: center;
+    border: 1px #6e676eaa solid;
+    background: #2741d630;
+    box-shadow: 0px 0px 20px 20px #667cfa6b inset;
+}
+#buttons{
+    text-align: center;
+}
+#buttons #play{
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 8px;
+    font: 23px Helvetica, sans-serif;
+}
+.input-hidden
+{
+    width: 100%;
+    visibility: hidden;
+}
 @media (max-width:359px){
  #left, #right{
         width: 100vw;
