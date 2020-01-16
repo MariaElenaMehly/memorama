@@ -141,7 +141,14 @@ button#play:hover{
     box-shadow: 0px 0px 20px 20px #667cfa6b inset;
     cursor: pointer;
 }
-
+.validate-true{
+    background: #4dde6b6e;
+    box-shadow: 0px 0px 20px 0px #22894eb3 inset;
+}
+.validate-error{
+    background: #f5524685;
+    box-shadow: 0px 0px 20px 0px #c50d00 inset;
+}
 #buttons{
     text-align: center;
 }
