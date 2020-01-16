@@ -116,6 +116,7 @@ button#play:hover{
     overflow: hidden;
 }
 .game-card{
+    cursor: pointer;
     color: black;
     height: 85px;
     width: 20%;  
@@ -137,7 +138,9 @@ button#play:hover{
     border: 1px #6e676eaa solid;
     background: #2741d630;
     box-shadow: 0px 0px 20px 20px #667cfa6b inset;
+    cursor: pointer;
 }
+
 #buttons{
     text-align: center;
 }
@@ -147,6 +150,7 @@ button#play:hover{
     padding: 8px;
     font: 23px Helvetica, sans-serif;
 }
+
 .input-hidden
 {
     width: 100%;
