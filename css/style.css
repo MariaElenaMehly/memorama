@@ -107,6 +107,7 @@ button#play{
     right: 0px;
     margin: 0 0 0 10px;
 }
+
 button#play:hover{
     background-color: #4c4cff;
 }
@@ -123,7 +124,7 @@ button#play:hover{
     cursor: pointer;
     color: black;
     height: 85px;
-    width: 20%;  
+    width: 24.53%;  
     margin: 1px;  
     float: left;
     line-height: 85px;
@@ -162,11 +163,44 @@ button#play:hover{
     padding: 8px;
     font: 23px Helvetica, sans-serif;
 }
+#stop{
+    color: white;
+    background-color: #980e0e;
+    right: 0px;
+    margin: 0 0 3px 10px;
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 8px;
+    font: 23px Helvetica, sans-serif;
+}
+#restore{
+    color: white;
+    background-color: #0e986f;
+    right: 0px;
+    margin: 0 0 3px 10px;
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 8px;
+    font: 23px Helvetica, sans-serif;
+}
 #timer{
     width: 100%;
     margin: 3vh 0 0 0;
     font: 25px sans-serif;
     text-align: center;
+}
+.game-over{
+    pointer-events: none;
+    background-color: #cfcecebd;
+    opacity: .3;
+}
+.loser{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+.invisible{
+    display: none;
 }
 
 .input-hidden
